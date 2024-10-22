@@ -16,11 +16,11 @@ def view(balance):
 # Function to deposit money
 def deposit(balance):
     amount = float(input("Enter the amount to deposit: "))
-    while amount <= 0:  # loop if the input is invalid
+    while amount <= 0:
         print('Invalid amount. Try again.')
         amount = float(input("Enter the amount to deposit: "))
 
-    # if the amount is valid, update the balance
+
     balance += amount
     print("Your current balance is: ", balance)
     if balance < 0:
@@ -32,11 +32,11 @@ def deposit(balance):
 # Function to withdraw money
 def withdraw(balance):
     amount = float(input("Enter the amount to withdraw: "))
-    while amount <= 0:  # loop if the input is invalid
+    while amount <= 0:
         print('Invalid amount. Try again.')
         amount = float(input("Enter the amount to withdraw: "))
 
-    # if the amount is valid, update the balance
+
     balance -= amount
     print("Your current balance is: ", balance)
     if balance < 0:
